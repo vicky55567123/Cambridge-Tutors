@@ -1,0 +1,225 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Satisfy', cursive;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #696969;
+    color: red;
+}
+
+/* STYLING QUOTES PAGE */
+
+    /* IDS body, header, container, footer*/
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container{
+  min-height: 100%;
+  position: relative;
+  height: 100%;
+  /*width: 100%;
+  padding: 25px;*/
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 30px; /* height of the footer */
+  text-align: center;
+  background: url("calc2blur.jpg") repeat center center;
+  background-size: cover;
+  position: center;
+}
+
+
+#footer {
+  display: block;
+  background-color: #333;
+  padding: 0px;
+  position: absolute fixed;
+  bottom: 0;
+  width: 100%;
+  height: 95px; /*height of the footer */
+}
+
+p {
+  color: #fff;
+  float: left center;
+}
+
+/*.main .container {
+  position: relative;
+  top: 100px;
+}*/ 
+
+/* styling the form */ 
+h3 {
+    font-size: 50px ;
+    font-family: 'Satisfy', cursive;
+    margin: 0;
+    color: #fff;
+}
+
+p, h4 {
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#free{ 
+  animation-duration: 2s;
+  color:#ffb300;
+}
+
+
+.form{ 
+    padding: 3%;
+    color:#fff;
+ }
+
+
+#levels , #subjects {
+    /*display: block;
+    position: center;
+    background-color: #1c1c1c rgb(213, 206, 206);
+    height: 50%;
+    width: 50%;*/
+    color:#fff;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.radio, .form-group{
+  font-size: 100%;
+  text-align: center;
+}
+
+#quote-result{ 
+  color:#ffb300;
+  font-size:20px;
+ }
+
+.control-group {
+  color:#fff;
+  display: inline-block;
+  width: 600px;
+  height: 660px;
+  margin: 10px;
+  padding: 30px;
+  text-align: left;
+  vertical-align: top;
+  background: #333;
+  box-shadow: 0 1px 2px rgba(0,0,0,10);
+}
+.form-group {
+  padding-left: 45%;
+  padding-right: 45%;
+  color:#fff;
+}
+
+.control {
+  font-size: 18px;
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+  background: #ffb300;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+
+
+/* Check mark */
+.control__indicator:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+  top: 4px;
+  left: 8px;
+  width: 3px;
+  height: 8px;
+  transform: rotate(45deg);
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}

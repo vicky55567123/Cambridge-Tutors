@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambridge Tutors</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy|Raleway" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="carosel.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Cambridge Tutors</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="quote.html">Quote</a></li>
+                <li><a href="Contactme.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide 1 -->
+                <div class="item active">
+                    <img src="images/studyimage9.jpg" alt="Welcome" class="carousel-image">
+                    <div class="carousel-caption" id="welcome">
+                        <h3>Welcome to Cambridge Tutors</h3>
+                        <p>5-Star Tutoring Services</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="item">
+                    <img src="images/studyimage7.jpg" alt="Testimonial Rosa" class="carousel-image">
+                    <div class="carousel-caption testimonial">
+                        <blockquote>
+                            <p>Cambridge Tutors responded very quickly, was flexible with times, and is getting on very well with my daughter. They are organized, punctual, and seem to really know their stuff. My daughter really likes the teacher Waqar Ahmed and says her work is improving.</p>
+                            <footer>Rosa</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="item">
+                    <img src="images/studyimage3.jpg" alt="Testimonial Anmol" class="carousel-image">
+                    <div class="carousel-caption testimonial">
+                        <blockquote>
+                            <p>I highly recommend Cambridge Tutors as a tutoring platform. They work diligently, prepare lessons beforehand, and are very systematic and knowledgeable. I've seen a tremendous improvement in both my kids' performance (all three sciences) in a short span of time. A big thank you to Cambridge Tutors!</p>
+                            <footer>Anmol</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="item">
+                    <img src="images/studyimage1.jpg" alt="Contact" class="carousel-image">
+                    <div class="carousel-caption" id="contact">
+                        <h3>Get in Contact</h3>
+                        <p>If you're interested in working together!</p>
+                        <div id="contact-button" class="col-md-12 text-center">
+                            <a href="Contactme.html" class="btn btn-info btn-lg" role="button">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        $('#myCarousel').hover(
+            function () {
+                $(this).carousel('pause');
+            },
+            function () {
+                $(this).carousel('cycle');
+            }
+        );
+    </script>
+
+</body>
+</html>

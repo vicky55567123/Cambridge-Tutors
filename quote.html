@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+								<div id="container">
+			<div id="header">
+    <meta charset="UTF-8">
+    <title>Quote</title>
+
+<!-- Adding Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Linking CSS and JQuery files -->
+<link rel="stylesheet" type="text/css" href="qcss.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script src="qmain.js"></script>
+
+<!-- Linking different fonts -->
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+<!-- Linking Animate CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+<link rel="stylesheet" href="animate.min.css">
+
+<!-- AOS on scroll animations-->
+    <link rel="stylesheet" href="css/dist/aos.css"/>
+	<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
+<!-- Adding AniJS library -->
+	<script src="anijs.js"></script>
+<!-- AniCollection.css library -->
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
+<!-- Adding an icon to the web tab-->
+<link rel="shortcut icon" href="pencil.png" /> 
+
+<!-- NAVIGATION TAB -->
+    
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">CambridgeTutors</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="Reviews.html">Reviews</a></li>
+            <li class="active"><a href="quote.html">Quote</a></li>
+            <li><a href="Contactme.html">Contact me</a></li>
+        </ul>
+    </div>
+    </nav>
+ </div>
+
+            </div> <!-- id header -->  
+
+<div id="body">
+<br>
+<br>
+<br>
+<br>
+
+<center> <h3> Here you can generate a quote!</h3></center>
+
+<div class="animated flash"> <center><h4 id="free">20 mins first lesson is free </h4></center></div>
+
+<!-- CREATING QUOTE'S PAGE -->
+
+<h4>Select the appropriate level, the subjects you want and how many hours! </h4>
+
+    <div class="control-group"> 
+    <h4> Please select one of the levels below:</h4>
+    <label class="control control--radio"> A-levels 
+    <input id="a-level" type="radio" name="level" value="A-Level"/> 
+    <div class="control__indicator"> </div>
+    </label>
+
+    <label class="control control--radio"> GCSE
+    <input id="gcse" type="radio" name="level" value="GCSE">
+    <div class="control__indicator"> </div>
+    </label>
+
+    <label class="control control--radio">KS3
+    <input id="ks3" type="radio" name="level" value="KS3">
+    <div class="control__indicator"> </div>
+    </label>
+
+    <label class="control control--radio">Eleven Plus
+    <input id="elevenplus" type="radio" name="level" value="ElevenPlus">
+    <div class="control__indicator"> </div>
+    </label>
+
+        <div id="alevelsubjects">
+        <h4> These are the A-level subjects that I teach. Please select as many as applicable:</h4>
+         <label class="control control--checkbox"> Biology
+         <input id="a-level-biology" type="checkbox" value="">
+         <div class="control__indicator"></div>
+         </label>
+    
+        <label class="control control--checkbox">Chemistry
+        <input id="a-level-chemistry" type="checkbox" value="">
+        <div class="control__indicator"></div>
+        </label>
+
+        <label class="control control--checkbox">Physics
+        <input id="a-level-geography" type="checkbox" value="">
+        <div class="control__indicator"></div>
+        </label>
+
+        <label class="control control--checkbox">Maths
+        <input id="a-level-maths" type="checkbox" value="">
+        <div class="control__indicator"></div>
+        </label>
+        </div>
+
+        <div id="gcsesubjects">
+    <h4> These are the GCSE subjects that I teach. Please select as many as applicable:</h4>
+    <label class="control control--checkbox">Biology
+    <input id="gcse-biology" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+
+    <label class="control control--checkbox">Chemistry
+    <input id="gcse-chemistry" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    
+    <label class="control control--checkbox">English
+    <input id="gcse-english" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    
+    <label class="control control--checkbox"> Geography
+    <input id="gcse-geography" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    
+    <label class="control control--checkbox">French
+    <input id="gcse-french" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    
+    <label class="control control--checkbox">Maths
+    <input id="gcse-maths" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    
+    <label class="control control--checkbox">Physics
+    <input id="gcse-physics" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    </div>
+
+
+    <div id="ks3subjects">
+    <h4> <li>These are the KS3 subjects that I teach. Please select as many as applicable:</h4></li>
+    <label class="control control--checkbox">Science
+    <input id="ks3-french" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    
+    <label class="control control--checkbox">English
+    <input id="ks3-english" type="checkbox" value=""> 
+    <div class="control__indicator"></div>
+    </label>
+
+    <label class="control control--checkbox">Maths
+    <input id="ks3-maths" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    </div>
+
+    <div id="elevenplussubjects">
+    <h4> This is the subject avaiable for Eleven Plus, please select it:</h4>
+    <label class="control control--checkbox">Primary<input id="elevenplus-primary" type="checkbox" value="">
+    <div class="control__indicator"></div>
+    </label>
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label for="hours">Number of hours:</label>
+    <div class= "hoursbox">
+    <input type="number" class="form-control" id="hours">
+</div></div>
+
+<!-- <a class="btn" href="#">Generate Quote</a> -->
+<button id="generate-quote">Generate Quote</button>
+<br>
+<br>
+<br>
+
+<div class="animated pulse"><div class="qresult"><span id="quote-result"></span></div>
+
+
+</div> <!-- id quote --> 
+
+<!-- AOS on scroll script -->
+    <script src="css/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+</div> <!-- id body -->
+
+
+<div id="footer"> 
+<p> &copy; 2024 Designed by Waqar Ahmed <a href= "exceltutoring.github.io" target="blank"> 
+<img src="GitHub-Icon.png">
+</a></p></div>
+
+</div> <!-- class container -->
+
+</html>
